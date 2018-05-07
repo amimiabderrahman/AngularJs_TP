@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <title>BlankCordovaApp2</title>
+</head>
+    <body ng-app="myapp" ng-controller="myctrl">
+        <table>
+            <tr><td><input type="checkbox"  ng-model="ch1"/></td><td><input type="text" ng-model="t1" /></td></tr>
+            <tr><td><input type="checkbox"  ng-model="ch2"/>:</td><td><input type="text" ng-model="t2" /></td></tr>
+            <tr><td><input type="checkbox"  ng-model="ch3"/>:</td><td><input type="text" ng-model="t3" /></td></tr>
+            <tr><td><input type="checkbox"  ng-model="ch4"/>:</td><td><input type="text" ng-model="t4" /></td></tr>
+            <tr><td><input type="checkbox"  ng-model="ch5"/>:</td><td><input type="text" ng-model="t5" /></td></tr>
+            <tr><td><input type="checkbox"  ng-model="ch6"/>:</td><td><input type="text" ng-model="t6" /></td></tr>
+            <tr><td></td><td><input type="button" value="calculer" ng-click="calculer()" /></td></tr>
+        </table>
+        <p >la valeur energitique est {{s}} Kilo Calories</p>
+    </body>
+
+</html>
