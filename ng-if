@@ -1,0 +1,8 @@
+ <input type="radio" name="rb" ng-model="s1" value="0" />
+    <input type="radio" name="rb" ng-model="s1"  value="1"  />
+    <div ng-if="s1!=0"> ana</div>
+    <select ng-model="s" ng-init="s=0">
+        <option value="0">F</option>
+        <option value="1">M</option>
+    </select>
+    <div ng-if="s!=0">ldlsdls</div>
