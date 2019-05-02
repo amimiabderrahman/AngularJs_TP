@@ -1,0 +1,29 @@
+<body ng-app="Myapp" ng-controller="Myctrl">
+    <div ng-model="t">
+        <input type="text" ng-model="t1"/>
+        <ul>
+            <li ng-repeat="x in t |orderBy:num |limitTo:t1">
+                {{x.num}}
+            </li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        var app = angular.module("Myapp", []);
+        app.controller("Myctrl", function ($scope)
+        {
+            $scope.t = [
+                { num: 1, nom: 'a', prenom: 'b' },
+                { num: 2, nom: 'a', prenom: 'b' },
+                { num: 32, nom: 'a', prenom: 'b' },
+                { num: 23, nom: 'a', prenom: 'b' },
+                { num: 5, nom: 'a', prenom: 'b' },
+                { num: 4, nom: 'a', prenom: 'b' }
+            ];
+           
+        });
+
+
+    </script>
